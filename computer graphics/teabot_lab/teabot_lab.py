@@ -21,7 +21,24 @@ def to_matrix(filename):
 
 def tri_square(a, b, c):
     #площадь через определитель
-    s = 0.5*np.abs((a[0] - c[0])*(b[1] - c[1]) - (b[0] - c[0])*(a[1] - c[1]))
+    mat_one = np.ones((3, 3))
+    mat_two = np.ones((3, 3))
+    mat_three = np.ones((3, 3))
+
+    mat_one[0][1] = mat_two[0][1] = a[0]
+    mat_one[0][2] = mat_three[0][1] = a[1]
+    mat_two[0][2] = mat_three[0][2] = a[2]
+
+    mat_one[1][1] = mat_two[1][1] = b[0]
+    mat_one[1][2] = mat_three[1][1] = b[1]
+    mat_two[1][2] = mat_three[1][2] = b[2]
+
+    mat_one[2][1] = mat_two[2][1] = c[0]
+    mat_one[2][2] = mat_three[2][1] = c[1]
+    mat_two[2][2] = mat_three[2][2] = c[2]
+
+    s = 0.5 * np.sqrt(np.linalg.det(mat_one)**2 + np.linalg.det(mat_two)**2 + np.linalg.det(mat_three)**2)
+
     return s
 
 def total_area(a_matrix, v_matrix):
