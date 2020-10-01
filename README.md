@@ -1,2 +1,2 @@
 # kfu
-my univercity probs and labs
+my university probs and labs
