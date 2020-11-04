@@ -1,4 +1,4 @@
-# К(П)ФУ
+# шарага
 
 * [OSfund](https://github.com/loverdom/kfu/tree/master/OSfund) - **Основы операционных систем**.  *Дябилкин Д.А* 
 * [computer graphics](https://github.com/loverdom/kfu/tree/master/computer%20graphics) - **Компьютерная графика.** *Нигматуллин Р.Р/Долгов Д.А*
